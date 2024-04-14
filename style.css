@@ -1,0 +1,239 @@
+/*==============Google font link==============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Arvo:wght@700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital@0;1&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*=========================Custom Properties========================*/
+
+:root {
+  /*===========Colors=========*/
+
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /*===========Typography=========*/
+
+  --fs-1: 45px;
+  --fs-2: 18px;
+
+  --font-family-spartan: "League Spartan", sans-serif;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--font-family-spartan);
+}
+
+/*=========================Reused styles===========================*/
+
+.container {
+  padding: 60px 16px;
+}
+
+.grid {
+  display: grid;
+}
+
+.section-reviews,
+.testimonials-wrapper {
+  gap: 15px;
+}
+
+/*=========================Main styles===========================*/
+.social-proof-section {
+  gap: 30px;
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.section-title {
+  color: var(--very-dark-magenta);
+  font-size: var(--fs-1);
+  line-height: 0.8;
+}
+
+.section-text {
+  font-size: var(--fs-2);
+  color: var(--dark-grayish-magenta);
+  margin-block-start: 20px;
+}
+
+.review-card {
+  background-color: var(--light-grayish-magenta);
+  padding-block: 12px;
+  border-radius: 10px;
+}
+
+.review-card > * {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.review-stars img {
+  display: inline-block;
+}
+
+.review-subtitle {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: var(--fs-2);
+  margin-block-start: 5px;
+}
+
+.testimonial-card {
+  background-color: var(--very-dark-magenta);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name,
+.user-mode {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.user-name {
+  color: var(--white);
+}
+
+.user-mode {
+  color: var(--soft-pink);
+}
+
+.user-message {
+  font-size: 18px;
+  color: var(--white);
+  margin-block-start: 20px;
+}
+
+/*==============Media queries=========*/
+
+@media (min-width: 992px) {
+  .social-proof-section {
+    max-width: 930px;
+    gap: 80px 50px;
+  }
+
+  .social-proof-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 2;
+    gap: 25px;
+  }
+
+  .section-content {
+    text-align: left;
+  }
+
+  .section-title {
+    line-height: 0.9;
+  }
+
+  .section-text {
+    --fs-2: 19px;
+    font-weight: 500;
+  }
+
+  .review-card {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: space-evenly;
+  }
+
+  .review-card:nth-child(2) {
+    position: relative;
+    left: 25px;
+  }
+
+  .review-card:nth-child(3) {
+    position: relative;
+    left: 50px;
+  }
+
+  .testimonial-card:nth-child(2) {
+    position: relative;
+    top: 25px;
+  }
+
+  .testimonial-card:nth-child(3) {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-proof-section {
+    max-width: 1100px;
+    gap: 80px 150px;
+  }
+}
